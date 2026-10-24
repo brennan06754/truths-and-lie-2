@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Two Truths and a Lie</title>
+</head>
+
+<body style="background-color: beige;">
+    <h1>Brennan's Truth and Lie Game</h1>
+    <hr>
+
+    <h2>Introductions</h2>
+
+    <form action="" id="name-form">
+        <label for="fname">First Name:</label><br />
+        <input type="text" name="fname" id="fname"><br />
+
+        <label for="lname">Last Name:</label><br />
+        <input type="text" name="lname" id="lname"><br />
+
+        <label for="age">Age:</label><br />
+        <input type="number" name="age" id="age"><br />
+    </form>
+
+    <br />
+    <input type="button" value="SUBMIT" onclick="greet();">
+    <p id="greet" style="font-size: x-large;">Welcome!</p>
+
+    <hr>
+
+    <h2>Warm up trivia question</h2>
+    <p>What is the only food that cannot go bad?</p>
+    <p id="trivia1-answer"></p>
+
+    <form action="">
+        <input type="radio" name="trivia1" id="chocolate">
+        <label for="chocolate">Dark Chocolate</label><br />
+
+        <input type="radio" name="trivia1" id="tuna">
+        <label for="tuna">Tuna</label><br />
+
+        <input type="radio" name="trivia1" id="honey">
+        <label for="honey">Honey</label><br />
+    </form>
+
+    <br />
+    <input type="button" value="SUBMIT" onclick="trivia1();">
+
+    <hr>
+
+    <h2>Two Truths and a Lie: Game 1</h2>
+    <p>Select the lie about me!</p>
+    <p id="game1-answer"></p>
+
+    <form action="">
+        <input type="radio" name="game1" id="volleyball">
+        <label for="volleyball">I play volleyball.</label><br />
+
+        <input type="radio" name="game1" id="moon">
+        <label for="moon">I have walked on the moon.</label><br />
+
+        <input type="radio" name="game1" id="friends">
+        <label for="friends">I enjoy spending time with friends.</label><br />
+    </form>
+
+    <br />
+    <input type="button" value="SUBMIT" onclick="checkGame1();">
+
+    <hr>
+
+    <h2>Two Truths and a Lie: Game 2</h2>
+    <p>Select the lie about me!</p>
+    <p id="game2-answer"></p>
+
+    <form action="">
+        <input type="radio" name="game2" id="student">
+        <label for="student">I am a high school student.</label><br />
+
+        <input type="radio" name="game2" id="brazil">
+        <label for="brazil">I have visited Brazil.</label><br />
+
+        <input type="radio" name="game2" id="dinosaur">
+        <label for="dinosaur">I own a pet dinosaur.</label><br />
+    </form>
+
+    <br />
+    <input type="button" value="SUBMIT" onclick="checkGame2();">
+
+    <hr>
+
+    <h2>Extra Challenge: Select Both Truths</h2>
+    <p>Select the two true statements!</p>
+    <p id="challenge-answer"></p>
+
+    <form action="">
+        <input type="checkbox" name="challenge" id="triangle">
+        <label for="triangle">A triangle has three sides.</label><br />
+
+        <input type="checkbox" name="challenge" id="week">
+        <label for="week">A week has eight days.</label><br />
+
+        <input type="checkbox" name="challenge" id="hour">
+        <label for="hour">An hour has sixty minutes.</label><br />
+    </form>
+
+    <br />
+    <input type="button" value="SUBMIT" onclick="checkChallenge();">
+
+    <script src="javascript/truth.js"></script>
+</body>
+</html>
